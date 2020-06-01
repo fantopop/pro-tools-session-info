@@ -27,5 +27,9 @@ setup(
         'pandas',
         'timecode'
     ],
+    dependency_links=[
+        'git+https://github.com/eoyilmaz/timecode',
+        'git+https://github.com/pandas-dev/pandas'
+    ],
     keywords=['audio', 'daw', 'edl']
 )
