@@ -1,0 +1,65 @@
+SESSION NAME:	sample_session_several_tracks
+SAMPLE RATE:	48000.000000
+BIT DEPTH:	24-bit
+SESSION START TIMECODE:	00:00:00;00
+TIMECODE FORMAT:	29.97 Drop Frame
+# OF AUDIO TRACKS:	3
+# OF AUDIO CLIPS:	4
+# OF AUDIO FILES:	4
+
+
+O N L I N E  F I L E S  I N  S E S S I O N
+Filename      	Location
+Audio 1_01.wav	Macintosh HD:Users:fantopop:Dropbox:Python:Pro Tools Session Info Reader:sample_session_several_tracks:Audio Files:
+Audio 2_01.wav	Macintosh HD:Users:fantopop:Dropbox:Python:Pro Tools Session Info Reader:sample_session_several_tracks:Audio Files:
+Audio 2_02.wav	Macintosh HD:Users:fantopop:Dropbox:Python:Pro Tools Session Info Reader:sample_session_several_tracks:Audio Files:
+Audio 3_01.wav	Macintosh HD:Users:fantopop:Dropbox:Python:Pro Tools Session Info Reader:sample_session_several_tracks:Audio Files:
+
+
+O F F L I N E  F I L E S  I N  S E S S I O N
+Filename      	Location
+
+
+O N L I N E  C L I P S  I N  S E S S I O N
+CLIP NAME 	Source File
+Audio 1_01	Audio 1_01.wav
+Audio 2_01	Audio 2_01.wav
+Audio 2_02	Audio 2_02.wav
+Audio 3_01	Audio 3_01.wav
+
+
+P L U G - I N S  L I S T I N G
+MANUFACTURER            	PLUG-IN NAME            	VERSION         	FORMAT          	STEMS                   	NUMBER OF INSTANCES
+
+
+T R A C K  L I S T I N G
+TRACK NAME:	Audio 1
+COMMENTS:	
+USER DELAY:	0 Samples
+STATE: 
+PLUG-INS: 
+CHANNEL 	EVENT   	CLIP NAME                     	START TIME    	END TIME      	DURATION      	TIMESTAMP         	STATE
+1       	1       	Audio 1_01                    	          0:09	          0:15	          0:05	              0:09	Unmuted
+
+
+TRACK NAME:	Audio 2
+COMMENTS:	
+USER DELAY:	0 Samples
+STATE: 
+PLUG-INS: 
+CHANNEL 	EVENT   	CLIP NAME                     	START TIME    	END TIME      	DURATION      	TIMESTAMP         	STATE
+1       	1       	Audio 2_01                    	          0:24	          0:29	          0:05	              0:24	Unmuted
+1       	2       	Audio 2_02                    	          0:33	          0:38	          0:04	              0:33	Unmuted
+
+
+TRACK NAME:	Audio 3
+COMMENTS:	
+USER DELAY:	0 Samples
+STATE: 
+PLUG-INS: 
+CHANNEL 	EVENT   	CLIP NAME                     	START TIME    	END TIME      	DURATION      	TIMESTAMP         	STATE
+1       	1       	Audio 3_01                    	          0:41	          0:48	          0:06	              0:41	Unmuted
+
+
+M A R K E R S  L I S T I N G
+#   	LOCATION     	TIME REFERENCE    	UNITS    	NAME                             	COMMENTS

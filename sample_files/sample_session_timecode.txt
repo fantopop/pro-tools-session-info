@@ -1,0 +1,89 @@
+SESSION NAME:	sample_session
+SAMPLE RATE:	48000.000000
+BIT DEPTH:	24-bit
+SESSION START TIMECODE:	00:00:00:00
+TIMECODE FORMAT:	24 Frame
+# OF AUDIO TRACKS:	3
+# OF AUDIO CLIPS:	7
+# OF AUDIO FILES:	7
+
+
+O N L I N E  F I L E S  I N  S E S S I O N
+Filename  	Location
+A 1_01.wav	Macintosh HD:Users:fantopop:Dropbox:Python:Pro Tools Session Info Reader:sample_session:Audio Files:
+A 1_02.wav	Macintosh HD:Users:fantopop:Dropbox:Python:Pro Tools Session Info Reader:sample_session:Audio Files:
+A 2_01.wav	Macintosh HD:Users:fantopop:Dropbox:Python:Pro Tools Session Info Reader:sample_session:Audio Files:
+A 2_02.wav	Macintosh HD:Users:fantopop:Dropbox:Python:Pro Tools Session Info Reader:sample_session:Audio Files:
+A 2_03.wav	Macintosh HD:Users:fantopop:Dropbox:Python:Pro Tools Session Info Reader:sample_session:Audio Files:
+A 3_01.wav	Macintosh HD:Users:fantopop:Dropbox:Python:Pro Tools Session Info Reader:sample_session:Audio Files:
+A 3_02.wav	Macintosh HD:Users:fantopop:Dropbox:Python:Pro Tools Session Info Reader:sample_session:Audio Files:
+
+
+O F F L I N E  F I L E S  I N  S E S S I O N
+Filename  	Location
+
+
+O N L I N E  C L I P S  I N  S E S S I O N
+CLIP NAME	Source File
+A 1_01	A 1_01.wav
+A 1_02	A 1_02.wav
+A 2_01	A 2_01.wav
+A 2_02	A 2_02.wav
+A 2_03	A 2_03.wav
+A 3_01	A 3_01.wav
+A 3_02	A 3_02.wav
+
+
+P L U G - I N S  L I S T I N G
+MANUFACTURER            	PLUG-IN NAME            	VERSION         	FORMAT          	STEMS                   	NUMBER OF INSTANCES
+Avid                    	EQ3 1-Band              	20.5.0d207      	AAX Native      	Mono / Mono             	1 active
+                        	Dyn3 Compressor/Limiter 	20.5.0d207      	AAX Native      	Mono / Mono             	1 active
+
+
+T R A C K  L I S T I N G
+TRACK NAME:	A 1
+COMMENTS:	
+USER DELAY:	0 Samples
+STATE: 
+PLUG-INS: 	EQ3 1-Band (mono)	Dyn3 Compressor/Limiter (mono)
+CHANNEL 	EVENT   	CLIP NAME                     	START TIME    	END TIME      	DURATION      	TIMESTAMP         	STATE
+1       	1       	A 1_01                        	   00:00:23:01	   00:00:23:18	   00:00:00:17	       00:00:23:01	Unmuted
+1       	2       	A 1_02                        	   00:00:24:11	   00:00:25:00	   00:00:00:13	       00:00:24:11	Unmuted
+
+
+TRACK NAME:	A 2
+COMMENTS:	
+USER DELAY:	0 Samples
+STATE: 
+PLUG-INS: 
+CHANNEL 	EVENT   	CLIP NAME                     	START TIME    	END TIME      	DURATION      	TIMESTAMP         	STATE
+1       	1       	A 2_01                        	   00:00:23:23	   00:00:24:19	   00:00:00:20	       00:00:23:23	Unmuted
+1       	2       	A 2_02                        	   00:00:25:09	   00:00:27:01	   00:00:01:16	       00:00:25:09	Unmuted
+1       	3       	A 2_03                        	   00:00:28:03	   00:00:29:10	   00:00:01:07	       00:00:28:03	Unmuted
+1       	4       	A 2_03                        	   00:00:32:01	   00:00:33:08	   00:00:01:07	       00:00:28:03	Unmuted
+1       	5       	A 2_03                        	   00:00:36:10	   00:00:37:17	   00:00:01:07	       00:00:28:03	Unmuted
+
+
+TRACK NAME:	A 3
+COMMENTS:	
+USER DELAY:	0 Samples
+STATE: 
+PLUG-INS: 
+CHANNEL 	EVENT   	CLIP NAME                     	START TIME    	END TIME      	DURATION      	TIMESTAMP         	STATE
+1       	1       	A 3_01                        	   00:00:25:08	   00:00:26:01	   00:00:00:17	       00:00:25:08	Unmuted
+1       	2       	A 3_02                        	   00:00:27:05	   00:00:27:20	   00:00:00:15	       00:00:27:05	Unmuted
+1       	3       	A 3_02                        	   00:00:30:00	   00:00:30:15	   00:00:00:15	       00:00:27:05	Unmuted
+1       	4       	A 3_02                        	   00:00:33:17	   00:00:34:08	   00:00:00:15	       00:00:27:05	Unmuted
+1       	5       	A 3_02                        	   00:00:36:20	   00:00:37:11	   00:00:00:15	       00:00:27:05	Unmuted
+1       	6       	A 3_02                        	   00:00:41:07	   00:00:41:22	   00:00:00:15	       00:00:27:05	Unmuted
+1       	7       	A 3_02                        	   00:00:43:10	   00:00:44:01	   00:00:00:15	       00:00:27:05	Unmuted
+
+
+M A R K E R S  L I S T I N G
+#   	LOCATION     	TIME REFERENCE    	UNITS    	NAME                             	COMMENTS
+1   	00:00:23:01  	1106000           	Samples  	Location 1                       	
+2   	00:00:23:18  	1140000           	Samples  	Location 2                       	
+3   	00:00:24:11  	1174000           	Samples  	Location 3                       	
+4   	00:00:25:00  	1200000           	Samples  	Location 4                       	
+5   	00:00:32:01  	1538000           	Samples  	Location 5                       	
+6   	00:00:33:08  	1600000           	Samples  	Location 6                       	
