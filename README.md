@@ -52,12 +52,12 @@ section: markers_listing, 6 items
 Tracks are accessible by their name:
 ```
 >>> session.track['A 2'].data
-   channel  event                       clip_name   start_time     end_time     duration    timestamp    state
-0        1      1  A 2_01                          00:00:23:23  00:00:24:19  00:00:00:20  00:00:23:23  Unmuted
-1        1      2  A 2_02                          00:00:25:09  00:00:27:01  00:00:01:16  00:00:25:09  Unmuted
-2        1      3  A 2_03                          00:00:28:03  00:00:29:10  00:00:01:07  00:00:28:03  Unmuted
-3        1      4  A 2_03                          00:00:32:01  00:00:33:08  00:00:01:07  00:00:28:03  Unmuted
-4        1      5  A 2_03                          00:00:36:10  00:00:37:17  00:00:01:07  00:00:28:03  Unmuted
+   channel  event clip_name   start_time     end_time     duration    timestamp    state
+0        1      1    A 2_01  00:00:23:23  00:00:24:19  00:00:00:20  00:00:23:23  Unmuted
+1        1      2    A 2_02  00:00:25:09  00:00:27:01  00:00:01:16  00:00:25:09  Unmuted
+2        1      3    A 2_03  00:00:28:03  00:00:29:10  00:00:01:07  00:00:28:03  Unmuted
+3        1      4    A 2_03  00:00:32:01  00:00:33:08  00:00:01:07  00:00:28:03  Unmuted
+4        1      5    A 2_03  00:00:36:10  00:00:37:17  00:00:01:07  00:00:28:03  Unmuted
 
 ```
 
