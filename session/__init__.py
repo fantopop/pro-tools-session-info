@@ -100,6 +100,9 @@ def parse_section(section):
     
     # Parse section parameters, if any present
     parameters = get_parameters(section)
+    # Split section into lines
+    lines = section.splitlines()
+    first_line = normalize(lines[0].replace('  ', '_').replace(' ', ''))
     
     # Define section type
     if 'session_name' in parameters.keys():
@@ -108,23 +111,22 @@ def parse_section(section):
         data = parameters
     elif 'track_name' in parameters.keys():
         section_type = 'track'
-        # Split section into lines
-        lines = section.splitlines()
         section_name = parameters['track_name']
         # Skip track_listing line if present in section
-        shift = (section_name == 'track_listing')
-        data = '\n'.join(lines[1+shift:])
+        shift = (first_line == 'track_listing')
+        data = '\n'.join(lines[shift:])
     else:
         section_type = 'section'
-        # Split section into lines
-        lines = section.splitlines()
         # Get section name from the first line
-        section_name = lines[0].replace('  ', '_').replace(' ', '')
-        section_name = normalize(section_name)
+        section_name = normalize(first_line)
         # Parse data from other lines into DataFrame
         data = pd.read_csv(StringIO('\n'.join(lines[1:])), sep='\t')
         # Strip whitespaces in column names and convert to lowercase
         data.columns = [normalize(col) for col in data.columns]
+        # Strip whitespaces in data
+        for column in data.columns:
+            if data[column].dtype == 'O':
+                data[column] = data[column].str.strip()
     
     return section_type, section_name, data
 
@@ -180,6 +182,11 @@ class Track:
         # Strip whitespaces in column names and convert to lowercase
         df.columns = [normalize(col) for col in df.columns]
         
+        # Strip whitespaces in data
+        for column in df.columns:
+            if df[column].dtype == 'O':
+                df[column] = df[column].str.strip()
+                
         self.data = df
         
         if parse_timecode:

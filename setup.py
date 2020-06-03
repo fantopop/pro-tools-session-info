@@ -19,17 +19,13 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
         'Natural Language :: English',
-        'Topic :: Multimedia :: Audio',
+        'Topic :: Multimedia :: Sound/Audio',
         'Topic :: Software Development :: Libraries'
     ],
     python_requires='>=3.6',
     install_requires=[
         'pandas',
         'timecode'
-    ],
-    dependency_links=[
-        'git+https://github.com/eoyilmaz/timecode',
-        'git+https://github.com/pandas-dev/pandas'
     ],
     keywords=['audio', 'daw', 'edl']
 )
