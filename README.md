@@ -2,7 +2,7 @@
 Read Session Info as Text files exported from Avid Pro Tools
 
 ## About
-A simple Python 3 module for reading text files exported from [Avid Pro Tools](https://www.avid.com/pro-tools) with various session data. These files a basicalys several CSV sections with metadata, so it's hard to import them directly into table management apps like Excel or Numbers. This module reads every section of `.txt` file into [pandas](https://pandas.pydata.org/) DataFrame object, wich provides fast and handy interface to read, edit and export table-like data. Session and track parameters are also available as attributes. 
+A simple Python 3 module for reading text files exported from [Avid Pro Tools](https://www.avid.com/pro-tools) with various session data. These files are basically several CSV sections with metadata, so it's hard to import them directly into table management apps like Excel or Numbers. This module reads every section of `.txt` file into [pandas](https://pandas.pydata.org/) DataFrame object, wich provides fast and handy interface to read, edit and export table-like data. Session and track parameters are also available as attributes. 
 
 ## Installation
 Installing from PyPi:
