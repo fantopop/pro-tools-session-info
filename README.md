@@ -28,8 +28,8 @@ Choose data to export. Specify Timecode in Time Format dropdown to use timecode 
 Read session info from exported `.txt` file:
 ```
 >>> from session import Session, Track
->>> session = Session('sample_files/sample_session_timecode.txt', parse_timecode=True)
->>> print(session)
+>>> sess = Session('sample_files/sample_session_timecode.txt', parse_timecode=True)
+>>> print(sess)
 session_name: sample_session
 sample_rate: 48000.000000
 bit_depth: 24-bit
@@ -51,7 +51,7 @@ section: markers_listing, 6 items
 
 Tracks are accessible by their name:
 ```
->>> session.track['A 2'].data
+>>> sess.track['A 2'].data
    channel  event clip_name   start_time     end_time     duration    timestamp    state
 0        1      1    A 2_01  00:00:23:23  00:00:24:19  00:00:00:20  00:00:23:23  Unmuted
 1        1      2    A 2_02  00:00:25:09  00:00:27:01  00:00:01:16  00:00:25:09  Unmuted
@@ -64,7 +64,7 @@ Tracks are accessible by their name:
 Every section and track stores their data as pandas DataFrame, wich supports export to csv:
 
 ```
->>> session.section['markers_listing'].to_csv('markers.csv')
+>>> sess.section['markers_listing'].to_csv('markers.csv')
 ```
 ### Creating changelist with guide track
 When session needs to be reconformed manually, it's good to create a changelist in EDL format to automate this task.
@@ -72,8 +72,8 @@ When session needs to be reconformed manually, it's good to create a changelist 
 2. Consolidate an empty clip for the whole length of the old cut, that should be reconformed. If you use waveform for manual reconform, consolidate the clip containing reference audio for the old cut.
 3. Cut the consolidated clip and conform it to the new cut. Use different start hour for the new cut, so the timecodes for the new and old cuts are not intersected.
 4. Export Session Info as Text for the `RECONFORM GT` track. Be sure to include `User Timestamp` while exporting, and don't export subframes.
-5. Read exported file in python: `session = Session('reconform.txt', parse_timecode=True)`
-6. Export changelist as edl file: `session.track['RECONFORM GT'].to_edl('reconform.edl')`
+5. Read exported file in python: `sess = Session('reconform.txt', parse_timecode=True)`
+6. Export changelist as edl file: `sess.track['RECONFORM GT'].to_edl('reconform.edl')`
 7. Use exported edl as changelist for the [Conformalizer](http://thecargocult.nz/conformalizer.shtml) or other reconforming app.
 
 ## Contact
